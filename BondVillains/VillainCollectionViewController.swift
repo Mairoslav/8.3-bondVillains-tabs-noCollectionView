@@ -27,8 +27,8 @@ class VillainCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         let space:CGFloat = 5.0
-        let dimensionWidth = (view.frame.size.width - (2 * space)) / space
-        let dimensionHeight = (view.frame.size.height - (2 * space)) / space
+        // let dimensionWidth = (view.frame.size.width - (2 * space)) / space
+        // let dimensionHeight = (view.frame.size.height - (2 * space)) / space
         
         
         // *** due to portrait/landscape consider using:
@@ -37,7 +37,7 @@ class VillainCollectionViewController: UICollectionViewController {
 
         flowLayout.minimumInteritemSpacing = space // *** spacing between items
         flowLayout.minimumLineSpacing = space // spacing between rows
-        flowLayout.itemSize = CGSize(width: dimensionWidth, height: dimensionHeight) // size of cells
+        // flowLayout.itemSize = CGSize(width: dimensionWidth, height: dimensionHeight) // size of cells
     }
     
     override func viewWillAppear(_ animated: Bool) {
